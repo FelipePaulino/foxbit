@@ -40,15 +40,13 @@ export default function ListInstuments({ instrument }) {
         `https://statics.foxbit.com.br/icons/colored/${Product1Symbol.toLowerCase()}.svg` : 'default-currency.svg'
 
     return (
-        <>
-            <Card
-                logo={image}
-                alt={Symbol}
-                name={Product1Symbol}
-                chipValue={dataInstrument.Rolling24HrPxChange}
-                price={dataInstrument.LastTradedPx}
-                volume={dataInstrument.Rolling24HrVolume}
-            />
-        </>
+        <Card
+            logo={image}
+            alt={Symbol}
+            name={Product1Symbol}
+            chipValue={dataInstrument.Rolling24HrPxChange}
+            price={dataInstrument.LastTradedPx}
+            volume={dataInstrument.Rolling24HrVolume}
+        />
     )
 }

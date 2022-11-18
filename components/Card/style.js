@@ -18,7 +18,7 @@ export const Box = styled.div`
 export const Chip = styled.div`
     width: 58px;
     height: 20px;
-    background: ${({ color }) => color ? 'rgb(252, 237, 237)' : 'rgb(235, 250, 244)'};
+    background: ${({ $color }) => $color ? 'rgb(252, 237, 237)' : 'rgb(235, 250, 244)'};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +27,7 @@ export const Chip = styled.div`
 
 export const ChipValue = styled.span`
     font-size: 12px;
-    color: ${({ color }) => color ? 'rgb(92, 48, 48)' : 'rgb(33, 71, 57)'};
+    color: ${({ $color }) => $color ? 'rgb(92, 48, 48)' : 'rgb(33, 71, 57)'};
 `;
 
 export const Logo = styled.img`

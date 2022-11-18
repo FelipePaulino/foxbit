@@ -7,8 +7,6 @@ import * as S from './style'
 export default function Home() {
 
   const [instruments, setInstruments] = useState([])
-  const [first, setFirst] = useState()
-  const [result, setResult] = useState([])
   const payloadInstruments = {
     m: 0,
     i: 2,
@@ -19,7 +17,6 @@ export default function Home() {
 
   useEffect(() => {
     const ws = new WebSocket('wss://api.foxbit.com.br/');
-
 
     ws.addEventListener('open', () => {
       console.log('connected');

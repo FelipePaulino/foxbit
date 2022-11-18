@@ -9,8 +9,8 @@ export const Card = ({ logo, alt, name, chipValue, price, volume }) => {
         <S.Container>
             <S.Box>
                 <S.Logo src={logo} alt={alt} />
-                <S.Chip color={validatorValue}>
-                    <S.ChipValue color={validatorValue}>{chipValue && chipValue.toLocaleString('pt-br', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%</S.ChipValue>
+                <S.Chip $color={validatorValue}>
+                    <S.ChipValue $color={validatorValue}>{chipValue && chipValue.toLocaleString('pt-br', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%</S.ChipValue>
                 </S.Chip>
             </S.Box>
             <S.Name>{name}</S.Name>
